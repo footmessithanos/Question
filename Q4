@@ -1,0 +1,28 @@
+#There is a bus with 30 seats. The seats are numbered from 1 to 30. the bus is divided into two decks - The Lower deck, and the Upper deck, with 15 seats each. And some of the seats come as Single and some as Double. For example, Seats 1 and 2 are Double, whereas Seat 11 is a Single.
+You will be given a Seat number, and your job is to classify it as one of these 4 types:
+Lower Single
+Lower Double
+Upper Single
+Upper Double
+
+
+
+
+
+#include <stdio.h>
+
+int main() {
+	int N;
+	scanf("%d",&N);
+	if(N>=1&&N<=10) {
+	    printf("Lower Double");
+	} else if(N>=11&&N<=15) {
+	    printf("Lower Single");
+	} else if(N>=16&&N<=25) {
+	    printf("Upper Double");
+	} else {
+	    printf("Upper Single");
+	}
+
+}
+
