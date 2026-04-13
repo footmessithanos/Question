@@ -1,0 +1,20 @@
+In a test, there are N problems, each carrying X marks. In each problem, Chef either received X marks or 0 marks.
+Determine whether is it possible for Chef to achieve exactly Y marks.
+
+
+
+
+
+
+#include <stdio.h>
+
+int main() {
+	int N,X,Y;
+	scanf("%d%d%d",&N,&X,&Y);
+	if(Y%X==0) {
+	    printf("YES");
+	} else {
+	    printf("NO");
+	}
+
+}
